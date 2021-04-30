@@ -6,7 +6,7 @@ const app = express()
 
 app.get("/", function(req, res){
     res.send("Server is up and running. ")
-    const url = "https://api.openweathermap.org/data/2.5/weather?q=Lagos&appid=6a85176eb6e4e715d88ef1bde47b41b8"
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=Lagos&appid=6a85176eb6e4e715d88ef1bd"
     https.get(url, function(response){
         console.log(response.statusCode);
         
